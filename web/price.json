@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "package_name": "Bayi",
+        "reg_price" : 19900,
+        "promo_price" : 14900
+    },
+    {
+        "id":2,
+        "package_name": "Pelajar",
+        "reg_price" : 46900,
+        "promo_price" : 23450
+    },
+    {
+        "id":3,
+        "package_name": "Personal",
+        "reg_price" : 58900,
+        "promo_price" : 38900
+    },
+    {
+        "id":4,
+        "package_name": "Bisnis",
+        "reg_price" : 109900,
+        "promo_price" : 65900
+    }
+]

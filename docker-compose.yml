@@ -1,0 +1,35 @@
+version: '3'
+services:
+  devbox:
+    build:
+      context: ./
+      dockerfile: DevBox.DockerFile
+    ports:
+      - "8004:80"
+      - "344:443"
+    volumes:
+      - "./box/:/var/www/html/"
+    depends_on:
+      - devmysql
+  webdev:
+    build:
+      context: ./
+      dockerfile: WebDev.DockerFile
+    ports:
+      - "5000:80"
+      - "440:443"
+    volumes:
+      - "./web/:/var/www/html/"
+
+  devmysql:
+    build:
+      context: ./
+      dockerfile: MySQLDev.DockerFile
+    ports:
+      - "3307:3306"
+    volumes:
+      - "./sql/box/mysql/:/var/lib/mysql/"
+    environment:
+      MYSQL_ROOT_PASSWORD: ''
+      MYSQL_ALLOW_EMPTY_PASSWORD : 'yes'
+    restart: always
