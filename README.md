@@ -17,7 +17,7 @@ Make sure that you have installed docker and docker-compose
 
 1. Clone this repo 
     ```sh
-   git clone https://github.com/rifqiadit10/boxbilling-php-docker.git
+   git clone https://github.com/rifqiadit10/nghstrtask2.git
    ```
 2. Change your directory ```cd boxbilling-php-docker```
 3. Then, run ```docker-compose up``` and Compose will start.
